@@ -1,0 +1,67 @@
+/* tipos de bordes */
+
+/* 
+dotted 
+dashed 
+solid 
+double 
+groove 
+ridge 
+inset
+outset
+none
+hidden
+
+*/
+
+/* bordes es profundidad 
+
+border-style: solid;
+border-color: blue;
+border-radius: 5px;
+border-width: 6px;
+
+*/
+
+/* background 
+rgba(0,0,0,0 este ultimo vamos podemos darle un color de degradado )
+
+opacity:0.3; le da una trasferecia al contenido completo 
+
+
+*/
+body{
+    /* sombra con  */
+    /* text-shadow: 3px 5px; */
+    /* text-decoration: overline; */
+    /* text-decoration: underline; */
+    overflow: hidden;
+    outline: 1px solid red ;
+}
+/* esto es para mirar si el lik a sido visitado  */
+a:link{
+    color: aqua;
+}
+a:hover{
+    color: yellow;
+}
+a:active{
+    color:red
+}
+
+/* todos tiene que ir en orden  */
+
+/* para quitar los puntos de una lista ordenadao no ordnada utilizamos el siguiente funsion
+ */
+
+ li{
+    list-style-type: none;
+    /* para poner los puntos fuera se usa  */
+    /* list-style-position: inside; */
+ }
+ /* para quitar los puntos  */
+
+ th, td {
+    /* la coma es para selecionar mas de una etiqueta para darle los mismo estilos a cada una */
+    color: white;
+ }
