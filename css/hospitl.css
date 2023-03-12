@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(/Novedades/Hospital.jpg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #009ce9;
+    padding: 10px;
+}
+
+body::before {
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* her le añadimos el gradiente que l vamos a dr a nuestra pagina en total  */
+    background-image: radial-gradient(circle at 50% -20.71%, #ade5ff 0, #7dcefb 25%, #3cb5f2 50%, #009ce9 75%, #0085e0 100%);
+    opacity: 0.4;
+    z-index: -1;
+    ;
+}
+
+td {
+    white-space: pre;
+}
+
+.menu_navegation ul li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.menu_navegation ul li {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu_navegation ul li:hover {
+    background-color: #208bdd;
+    transition: 0.3s;
+}
+
+.menu_navegation ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.center {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    width: 70%;
+    margin: 200px auto;
+    text-align: center;
+}
+
+.center h1 {
+    font-size: 7em;
+    margin-bottom: 20px;
+}
+
+.center p {
+    width: 90%;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.add {
+    margin-top: 20px;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #208bdd;
+    font-size: 15px;
+}
+
+.add:hover {
+    background-color: rgba(228, 239, 246, 0.313);
+    transition: 0.4s;
+}
+
+/* aqui espieza el contenido */
+.content {
+    background-color: white;
+}
+
+.services {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.services div {
+    display: inline-block;
+}
+
+.one_service {
+    width: 24%;
+    margin: 20px auto;
+    padding: 10px;
+    /* acuerdate que el vertical top es para subir el div al top del contenedor padre */
+    vertical-align: top;
+}
+
+.container_anuncios {
+    width: 70%;
+    margin: 15px 15px;
+}
+
+.container_anuncios div {
+    display: inline-block;
+    width: 48%;
+    margin: 5px;
+}
+
+.container_anuncios div h2 {
+    margin-bottom: 20px;
+}
+
+.icon {
+    padding: 20px 5px 0 5px;
+    background-color: rgba(246, 236, 236, 0.884);
+}
+
+.icon i {
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: rgb(37, 189, 189);
+}
+
+/* her comienza la seccion de emergency */
+.emergency {
+    width: 90%;
+    margin: 60px auto 0 auto;
+    padding-bottom: 50px;
+}
+
+.emergency div {
+    display: inline-block;
+    background-color: #7dcefb;
+    width: 30%;
+    padding: 17px;
+
+}
+
+.tabla {
+    vertical-align: top;
+}
+
+.final {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.redes :hover {
+    transform: rotate(25deg);
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg); */
+}
+.redes {
+    cursor: pointer;
+    color: white;
+    font-size: 50px;
+    margin: 25px;
+}
+
+.copyrigth {
+    text-align: center;
+}
+.redes_sociales h2 {
+    margin-bottom: 40px;
+}
+.padding{
+    padding: 60px;
+}
+.redes_sociales {
+    text-align: center;
+    width: 80%;
+    margin: 40px auto;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.video iframe{
+    margin: 0 6px 0 6px;
+}
+.seccion_video button{
+    text-align: center;
+}
+.informacion a{
+    text-decoration: none;
+    color: black;
+}
+.boton{
+    text-align: center;
+    padding: 20px;
+}
+.boton button{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #208bdd;
+    
+}
+.boton button:hover{
+    background-color: grey;
+}
+.boton button a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+}
+.comentario{
+    width: 60%;
+    margin: 10px auto;
+    border: 1px solid blue;
+    padding: 10px 10px;
+    
+}
+button{
+    cursor: pointer;
+}
+.tamano{
+    resize: none;
+    width: 300px;
+    height: 300px;
+}
+.form{
+    width: 60%;
+    padding: 10px;
+    
+}
+.form input,textarea{
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.form input,textarea{
+    color: white;
+    background-color: #073247;
+    border: 1px solid blue;
+}
+.formulario {
+    border: 1px solid red;
+}

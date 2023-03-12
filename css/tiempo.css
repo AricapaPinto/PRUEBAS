@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/Novedades/original2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: contain; */
+    /*Cuando lo cambiamos a background-size:contain; vemos que la imagen se encoge para ajustarse a la etiqueta section.*/
+
+    /* background-size: cover; */
+    /* background-position-x:center;
+    background-position-y:center; */
+}
+
+img {
+    max-width: 100%;
+}
+
+@media(min-width:993px) {
+    header {
+        margin-top: 1.5em;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .buscador {
+        /* border: 1px solid red; */
+        margin: 15px;
+        display: inline-block;
+    }
+
+    nav {
+        margin: 20px;
+    }
+
+    .novedades {
+        text-align: center;
+    }
+
+    .novedades article {
+        width: 20%;
+        display: inline-block;
+        padding: 5px;
+        margin: 5px 5.5px;
+        /* border: 1px solid yellow; */
+    }
+
+    .precio_reloj div {
+        margin-left: 85px;
+        transition: box-shadow 0.5s ease;
+        padding: 1em 0;
+        margin-top: 2em;
+        float: left;
+        width: 38.4%;
+    }
+
+    .precio_reloj div p {
+        width: 45%;
+        margin: 0 auto;
+    }
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 60px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a:hover {
+    color: #ffff16;
+}
+
+.dos {
+    margin-top: 20px;
+}
+
+.buscador i {
+    color: white;
+    text-align: center;
+    padding: 6px;
+    /* border: 1px solid yellow; */
+}
+
+.btn {
+    display: inline-block;
+}
+
+.buscador input {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border-radius: 5px;
+    width: 70%;
+    padding: 10px;
+    border: 1px solid blue;
+    background: #0a2223;
+}
+
+.contenedor1 {
+    width: 50%;
+    margin: 200px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenido {
+    color: white;
+}
+
+.espacio {
+    margin-top: 20px;
+}
+
+.margin {
+    margin-top: 20px;
+    padding: 6px;
+    width: 15%;
+    background-color: transparent;
+    border-color: white;
+    cursor: pointer;
+}
+
+.precio_reloj div {
+    /* border: 1px solid white; */
+    margin-bottom: 20px;
+}
+
+.margin span {
+    color: white;
+}
+
+
+@media(max-width:601px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    figure i img {
+        width: 300px;
+    }
+
+    nav ul {
+        width: 70%;
+        margin: 4px auto;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-top: 9px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .contenedor1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .margin {
+        width: 40%;
+        padding: 10px;
+    }
+
+    .novedades article {
+        /* border: 1px solid #c90cb6; */
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .precio_reloj {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .reloj {
+        text-align: center;
+    }
+
+    .precio_reloj div {
+        /* border: 1px solid #e92727; */
+        display: block;
+
+    }
+}
+
+/* este es el tamaño de la pantalla pequeña */
+@media(min-width:602px) and (max-width:992px) {
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    nav ul li {
+        margin-right: 18px;
+    }
+
+    figure i img {
+        width: 70px;
+    }
+
+    .buscador {
+        /* background-color: red; */
+        /* display: block; */
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .bus {
+        width: 60%;
+    }
+
+    .alinear {
+        display: inline-block;
+    }
+
+    .dos {
+        margin-left: 25px;
+    }
+
+    .tres {
+        margin-left: 15px;
+    }
+
+    .novedades article {
+        width: 40%;
+        display: inline-block;
+        padding: 1em;
+        margin: 10px 5.5px;
+        /* border: 1px solid #0c5bc9; */
+    }
+
+    .precio_reloj {
+        width: 80%;
+       
+    }
+
+    .precio_reloj div {
+        margin: 10px 35px;
+    }
+
+}
+
+/* Aqui enpieza la parte de los precios de los relojes */
+
+.reloj {
+    font-family: 'Montserrat', sans-serif;
+    background-image: radial-gradient(circle at 47.64% 49.14%, #0a2223 0, #0c1d1d 12.5%, #0b1817 25%, #0a1110 37.5%, #070707 50%, #040000 62.5%, #000000 75%, #000000 87.5%, #000000 100%);
+}
+
+.titulo_reloj h2,
+h3 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 35px;
+    color: white;
+}
+
+.precio_reloj p {
+    color: white;
+}
+
+.precio_reloj {
+    margin-top: 4em;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.precio_reloj div {
+    text-align: center;
+}
+
+.precio_reloj div p {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.precio_reloj div img {
+    cursor: pointer;
+}
+
+.precio_reloj div img {
+    border-radius: 50%;
+}
+
+.precio_reloj div p {
+    margin-top: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.titulo_2 {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.precio_reloj div img:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(249, 249, 249, 100);
+}
+
+.novedades {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 10px auto;
+    /* border: 1px solid red; */
+}
+
+/* prueba de usar la propiedad background-attachment: fixed; */
+
+.Redes_Sociales {
+    height: 300px;
+    background-image: url(/Novedades/reloj.jpg);
+    /* border: 1px solid yellow; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+    /* este bacgroud es para que la imagen se quede congelada aunque por el momento no la voya autilizar  */
+    background-attachment: fixed;
+}
+/* esta parte es la de la redes sociales */
+.Redes_Sociales div h2,p{
+    text-align: center;
+    padding-top: 10px;
+}
+.Redes_Sociales div{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 30px;
+}
+.Enlaces{
+    text-align: center;
+}
+.Enlaces a {
+    padding: 0 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.Facebook :hover{
+    color: #0000ff;
+}
+.twitter :hover{
+    color: #1DA1F2;
+}
+.youtobe :hover{
+    color: red;
+}
+.github :hover{
+    color: gray;
+}
+.instragram :hover{
+    background: rgb(131,58,180);
+    background: linear-gradient(32deg, rgba(131,58,180,1) 10%, rgba(253,29,29,1) 52%, rgba(252,176,69,1) 80%);
+}
+.Enlaces a i{
+    font-size: 35px;
+}
+/* section formulario  */
+.Registro_de_datos h2{
+    margin-top: 40px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+
+}
+.formulario{
+    color: white;
+    width: 500px;
+    background: #0a2223;
+    padding: 40px;
+    margin:100px auto;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.formulario p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+.formulario h4{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.datos{
+    width: 97%;
+    padding: 10px;
+    color: white;
+    background: #0a2223;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: 1px solid #1f53c5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.formulario a{
+    color: white;
+    text-decoration:none;
+}
+.formulario a:hover{
+    color: white;
+    text-decoration:underline;
+}
+.boton{
+    width: 100%;
+    border: none;
+    background: #1f53e5;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+footer  {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer small{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+}

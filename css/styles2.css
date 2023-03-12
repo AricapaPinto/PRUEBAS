@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.padre div{
+    padding: 10%;
+    background-color: green;
+    margin: 3px;
+}
+

@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* estas son las etiqutas mas importants en el css */
+
+body{
+    background-color: gray;
+    font-family: 'Marko One', serif;
+}
+footer{
+    background: #32dd32;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+figure img{
+    border-radius: 50%;
+    margin: 1em ;
+}
+
+nav ul li{
+    margin-right: 1.5em;
+    display: inline-block;
+    font-size: 1.2em
+}
+nav{
+   margin-top: 3em;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Amaranth', sans-serif;
+}
+a:hover{
+    color: white;
+}
+h2{
+    font-size: 2em;
+    font-family: 'Shrikhand', cursive;
+}
+/* aqui termina la parte de el menu de navegacion */
+.primer_contenido{
+    border: 1px solid white;
+    margin-top: 1em;
+    text-align: center;
+}
+.primer_contenido div{
+    display: inline-block;
+}
+.conte_1{
+    border: 1px solid red;
+}
+.conte_2{
+    border: 1px solid black;
+}
+.texto{
+    padding: 1.5em 2em;
+    
+}
+.tamaño{
+    width: 45%;
+    margin: 1em 1em;
+    padding-top: 1em;
+}
+@media(min-width:701px){
+    body{
+        background-color: yellow;
+    }
+    
+
+    .primer_contenido div{
+        
+        margin-right: 1em;
+        text-align: center;
+    }
+}
+/* esta parte de abajo es el responsive de las pantallas menores a 700 pixeles  */
+@media(max-width:700px){
+    body{
+       background-color: white;
+    }
+    footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav{
+        margin-top: 1em;
+     }
+    nav ul li{
+        font-size: 1em;
+        display: block;
+        margin: 0.5em;
+    }
+    nav ul li a{
+        margin-right: 1em;
+
+    }
+    .tamaño{
+        width: 100%;
+    }
+    
+    
+    
+}
